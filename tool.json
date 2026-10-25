@@ -1,0 +1,49 @@
+{
+  "id": "E060",
+  "slug": "eng-gas-rms-speed",
+  "title": "기체 분자 RMS 속력 계산기",
+  "title_en": "Gas Molecular RMS Speed Calculator",
+  "category": "기체",
+  "category_en": "Gases",
+  "fields": [
+    {
+      "key": "t",
+      "label": "절대온도 T",
+      "label_en": "Absolute temperature T",
+      "dimension": "temperature",
+      "example": 300,
+      "constraint": "positive",
+      "display_unit": "K",
+      "display_value": "300"
+    },
+    {
+      "key": "m",
+      "label": "몰질량 M",
+      "label_en": "Molar mass M",
+      "dimension": "molarMass",
+      "example": 0.02897,
+      "constraint": "positive",
+      "display_unit": "gmol",
+      "display_value": "28.97"
+    }
+  ],
+  "result_label": "제곱평균제곱근 속력 v_rms",
+  "result_label_en": "Root mean square molecular speed v_rms",
+  "result_dimension": "speed",
+  "formula": "v_rms = √(3RT/M)",
+  "purpose": "이상기체 분자 병진운동의 RMS 속력 계산",
+  "purpose_en": "Calculate the RMS translational molecular speed of an ideal gas.",
+  "assumptions": "T,M>0. 열평형 이상기체의 비상대론 병진운동 모델이다. 평균 속력·최빈 속력과 구분한다. 혼합기체 전체에 임의의 몰질량을 넣지 않는다.",
+  "assumptions_en": "Required: T,M>0 and a nonrelativistic ideal gas at thermal equilibrium. RMS speed differs from mean speed and most probable speed. A gas mixture requires an appropriate species molar mass.",
+  "sources": [
+    {
+      "label": "OpenStax · 2 2 pressure temperature and rms speed",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed"
+    }
+  ],
+  "condition": "",
+  "condition_en": "",
+  "site": "https://nanalab.kr/eng-gas-rms-speed/",
+  "repository": "https://github.com/NaNaCompany/eng-gas-rms-speed",
+  "output_unit": "ms"
+}
